@@ -84,3 +84,4 @@ php artisan vendor:publish --provider="AwemaPL\Packaginator\PackaginatorServiceP
 ## License
 
 [MIT](http://opensource.org/licenses/MIT)
+ 
