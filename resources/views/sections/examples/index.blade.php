@@ -98,13 +98,13 @@
                 </div>
             </div>
         </div>
-        <div class="cell-1-2 cell--dsm" id="vt-modal-window">
+        <div class="cell-1-2 cell--dsm" id="vt-content-window">
             <h4>{{ _p('packaginator::pages.example.modal_window', 'Modal window') }}</h4>
             <div class="card">
                 <div class="card-body">
-                    <modal-window ref="modal">
+                    <content-window ref="modal">
                         Text in the modal window
-                    </modal-window>
+                    </content-window>
 
                     <!-- direct call of method for opening a modal window (not recommended) -->
                     <button class="btn" @click="$refs.modal.open()">Open a window</button>
@@ -188,7 +188,7 @@
                     {{session('virtual-tour-from-beginning')}}
                         <virtual-tour name="welcome1" @if(\AwemaPL\VirtualTour\Tour::isFromBeginning()) from-beginning @endif :fade="false" :steps="[
                                     {
-                                        el: '#vt-modal-window',
+                                        el: '#vt-content-window',
                                         message: 'From second tour!',
                                         fade: true
                                     },

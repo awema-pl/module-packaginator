@@ -64,7 +64,7 @@
 
 @section('modals')
 
-    <modal-window name="create_package_confirm" class="modal_formbuilder"
+    <content-window name="create_package_confirm" class="modal_formbuilder"
                   title="{{ _p('packaginator::pages.creator.confirm_create', 'Confirm create') }}">
         <form-builder :edited="true" url="{{ route('packaginator.creator.store') }}"
                       @sended="AWEMA.emit('content::histories_table:update')"
@@ -72,5 +72,5 @@
                       disabled-dialog>
             <fb-input name="name_package" label="{{ _p('packaginator::pages.creator.name_package', 'Name package') }}"></fb-input>
         </form-builder>
-    </modal-window>
+    </content-window>
 @endsection
