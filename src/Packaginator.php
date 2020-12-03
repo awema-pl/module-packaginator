@@ -178,7 +178,7 @@ class Packaginator implements PackaginatorContract
     public function includeLangJs()
     {
         $lang = config('indigo-layout.frontend.lang', []);
-        $lang = array_merge_recursive($lang, app(\Illuminate\Contracts\Translation\Translator::class)->get('packaginator::js'));
+        $lang = array_merge_recursive($lang, app(\Illuminate\Contracts\Translation\Translator::class)->get('packaginator::js')?:[]);
         app('config')->set('indigo-layout.frontend.lang', $lang);
     }
 
