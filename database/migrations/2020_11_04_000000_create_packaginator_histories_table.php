@@ -11,14 +11,23 @@ class CreatePackaginatorHistoriesTable extends Migration
     {
         Schema::create(config('packaginator.database.tables.packaginator_histories'), function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_id')->nullable();
             $table->string('name');
             $table->timestamps();
+        });
+
+        Schema::table(config('packaginator.database.tables.packaginator_histories'), function (Blueprint $table) {
+            $table->foreignId('user_id')
+                ->nullable()
+                ->constrained(config('packaginator.database.tables.users'))
+                ->onDelete('cascade');
         });
     }
 
     public function down()
     {
+        Schema::table(config('packaginator.database.tables.packaginator_histories'), function (Blueprint $table) {
+            $table->dropForeign(['user_id']);
+        });
         Schema::drop(config('packaginator.database.tables.packaginator_histories'));
     }
 }

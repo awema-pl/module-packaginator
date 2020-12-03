@@ -61,6 +61,7 @@ class CreatorController extends Controller
     {
         return EloquentHistory::collection(
             $this->histories->scope($request)
+                ->isOwner()
                 ->latest()->smartPaginate()
         );
     }

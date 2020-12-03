@@ -73,7 +73,8 @@ return [
 
     'database' => [
         'tables' => [
-            'packaginator_histories' =>'packaginator_histories'
+            'users' =>'users',
+            'packaginator_histories' =>'packaginator_histories',
         ]
     ]
 ];

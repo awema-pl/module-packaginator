@@ -24,7 +24,7 @@ class Packaginator implements PackaginatorContract
     public function routes()
     {
         if ($this->isActiveRoutes()) {
-            if ($this->isActiveInstallationRoutes()) {
+            if ($this->canInstallation()) {
                 $this->installationRoutes();
             }
             if ($this->isActiveCreatorRoutes()) {

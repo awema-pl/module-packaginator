@@ -26,7 +26,6 @@ class EloquentHistoryRepository extends BaseRepository implements HistoryReposit
 
         // apply custom scopes
         $this->entity = (new EloquentHistoryScopes($request))->scope($this->entity);
-        $this->userOwner();
         return $this;
     }
 
