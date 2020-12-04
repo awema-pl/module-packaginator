@@ -34,6 +34,7 @@
         "awema-pl/module-permission": "dev-master",
         "awema-pl/module-repository": "dev-master",
         "awema-pl/module-sticky-params": "dev-master",
+        "awema-pl/module-subscription": "dev-master",
         "awema-pl/module-system-notify": "dev-master",
         "awema-pl/module-tab-builder": "dev-master",
         "awema-pl/module-table-builder": "dev-master",
@@ -65,7 +66,6 @@
             }
         }
     },
-
     "repositories": [
         {
             "type": "path",
@@ -115,73 +115,92 @@
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Table-builder",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Assets",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Auth",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Filter-wrapper",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Form-builder",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Indigo-layout",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Modal-window",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Page-map",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Permission",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Repository",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
             "type": "path",
             "url": "../Sticky-params",
             "options": {
                 "symlink": true
             }
-        },        {
+        },
+        {
+            "type": "path",
+            "url": "../Subscription",
+            "options": {
+                "symlink": true
+            }
+        },
+        {
             "type": "path",
             "url": "../Virtual-tour",
             "options": {
